@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/Murtaza970/Work_vis2/main/VIS2%20Folder/data/Salary_Complete.csv"
+    "url": "https://raw.githubusercontent.com/Taz0097/vis2/main/VIS2%20Folder/data/Salary_Complete.csv"
   },
   "params": [
     {
