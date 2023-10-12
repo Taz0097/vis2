@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" href="css/style.css" type= "text/css" media = "all">
+
+
+</head>
+<body id="Body">
+  <div id="MainBox">
+  
+<div id="Title">Salary based on Race and Region</div>
+
+<div id="Map_detail">
+  Salary based on race is existed all over the world, but we don not have access to all 
+  The map below displays the spread of these
+  data throughout some countries in the world. As can be expected, all of these 
+  are gathered from first world countries, however the data is not complete at all,
+  but it could be good indicator of the difference.
+</div>
+<div id="map"></div>
+<div id="Salary_title">A </div>
+<div id="Bubble_detail">
+  The bubble chart on the left depicts ten of the relationship between 
+  years of experience and salary. A lot of the salary is spread between 70000- 150000.
+  We can select the race category, country and salary range through the parameters created inthe vis.
+</div>
+<div id="Vis2_bubble"></div>
+<div id="line_detail">
+  The line chart represents different countries based on different race, how the salary is represented with the points.
+</div>
+<div id="line_point"></div>
+<div id="Area chart">
+  
+</div>
+<div id="Area_detail">
+Area Chart depict Salary distribution on different countries vs experience this represents different race salary in different countries
+</div>
+<div id="Vis2_Area"></div>
+</div>
+
+<script type="text/javascript">
+
+  var spec1 = "js/map.json";
+  vegaEmbed('#map', spec1).then(function(result) {
+     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec2 = "js/Vis2_bubble.json";
+  vegaEmbed('#Vis2_bubble', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var spec3 = "js/line_point.json";
+  vegaEmbed('#line_point', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec4 = "js/Vis2_Area.json";
+  vegaEmbed('#Vis2_Area', spec4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+</script>
+
+</body>
+</html>
